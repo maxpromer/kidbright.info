@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>สารบัญ KidBright</title>
+<meta name="description" content="สารบัญ KidBright นี้ รวบรวมลิ้งข้อมูลเกี่ยวกับ KidBright ไว้มากที่สุด เพื่อให้ง่ายต่อการค้นหาข้อมูล">
+<meta name="keywords" content="KidBright, บอร์ดสมองกลฝังตัว, ESP32, NECTEC, การศึกษา 4.0">
+<meta name="author" content="สนธยา นงนุช">
+
+<meta name="og:url" content="https://kidbright.info/">
+<meta name="og:type" content="website">
+<meta name="og:title" content="สารบัญ KidBright">
+<meta name="og:image" content="https://kidbright.info/files/maxresdefault.jpg">
+<meta name="og:description" content="สารบัญ KidBright นี้ รวบรวมลิ้งข้อมูลเกี่ยวกับ KidBright ไว้มากที่สุด เพื่อให้ง่ายต่อการค้นหาข้อมูล">
+  
+<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>สารบัญ KidBright</h1>
+    <div class="logo"></div>
+  </header>
+  <div class="content">
+    <section>
+      <h2>ข้อมูลเบื้องต้นเกี่ยวกับ KidBright</h2>
+      <article>
+        <p>KidBright เป็นบอร์ดสมองกลฝังตัวที่สามารถทำงานตามชุดคำสั่ง โดยผู้เรียนสามารถสร้างชุดคำสั่งผ่านโปรแกรม KidBright IDE บนคอมพิวเตอร์ ที่ใช้งานง่าย เพียงใช้การลากบล็อกคำสั่งมาวางต่อกัน (Drag and Drop) ช่วยลดความกังวลเรื่องการพิมพ์ชุดคำสั่งผิด ชุดคำสั่งที่ถูกสร้างดังกล่าวจะถูกส่งไปที่บอร์ด KidBright ให้ทำงานตามที่โปรแกรมไว้ เช่น รดน้ำต้นไม้ตามระดับความชื้นที่กำหนด หรือเปิด-ปิดไฟตามเวลาที่กำหนด เป็นต้น</p>
+        <p>KidBright มุ่งเน้นให้ผู้เรียนได้พัฒนากระบวนการคิดเชิงตรรกะ ร่วมกับความคิดสร้างสรรค์ สามารถต่อยอดสู่การพัฒนาแอปพลิเคชันและเทคโนโลยีด้วยตนเองในอนาคต</p>
+        <div class="ref">ข้อมูลจาก <a href="https://www.kid-bright.org/" target="_blank">kid-bright.org</a>
+      </article>
+    </section>
+    <section>
+      <h2>ข้อมูลเชิงเทคนิคของ KidBright32</h2>
+      <article>
+        <h3>ข้อมูลเชิงเทคนิคของ KidBright เวอร์ชันสอง (หรือ v1.1?)</h3>
+        <ul>
+          <li>ใช้ชิป Espressif ESP32</li>
+          <li>Flash: 4MB (SPI Flash)</li>
+          <li>การออกแบบและขนาดแตกต่างจากเวอร์ชันแรก เนื่องจากเปลี่ยนมาใช้ ESP32 แทน ESP8266 มีขา I/O มากกว่าเดิม แต่หลายอย่างยังคงเดิม</li>
+          <li>2x 8x8 Red LED Matrix + HT16K33 I2C driver (pin: 21, 22)</li>
+          <li>2x Switch (Push Buttons: Switch1, Switch2, pins: 14, 16)</li>
+          <li>4x Digital Inputs (4mm. Rings: IN1..IN4, pins: 32, 33, 34, 35)</li>
+          <li>2x Digital Outputs (4mm. Rings: OUT1..OUT2, pins: 26, 27)</li>
+          <li>4x programmable LED status (BT, WIFI, NTP, IOT, pins: 23, 2, 5, 12)</li>
+          <li>1x Reset Button</li>
+          <li>1x Speaker (Buzzer, pin: 13)</li>
+          <li>1x LED builtin (pin: 16)</li>
+          <li>1x LM73 temperature sensor (I2C pins: 4,5 )</li>
+          <li>1x LDR (analog, pin 36)</li>
+          <li>1x RTC (I2C)</li>
+          <li>1x coin-cell battery holder for RTC</li>
+          <li>1x USB female type A connector, 5V output (pin: 25)</li>
+          <li>1x microUSB for power supply</li>
+        </ul>
+        <div class="ref">ข้อมูลจาก <a href="https://www.facebook.com/iot.kmutnb/posts/%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94-kidbrightcoding-at-school-powered-by-kidbrighthttpswwwkid-bri/205153303438765/" target="_blank">IoT Engineering Education</a></div>
+        <h3>เอกสารข้อมูลเชิงเทคนิคเผยแพร่</h3>
+        <ul>
+          <li><a href="https://kidbright.info/files/KidBright32-Dimension.jpg" target="_blank">KidBright32 Dimension</a></li>
+          <li><a href="https://drive.google.com/open?id=1by7ZHIezQYF3nggyZmH72CW727u4BAEP" target="_blank">วงจรของ KidBright32 V1.1 V1.2</a></li>
+          <li><a href="https://kidbright.info/files/Sch_KidBright32%20V1.3.pdf" target="_blank">วงจรของ KidBright32 V1.3</a></li>
+          <li><a href="https://kidbright.info/files/KidBright-advanced-user-diagram.jpg" target="_blank">KidBright32 Advanced User Diagram</a></li>
+          <!--<li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li> -->
+        </ul>
+      </article>
+    </section>
+    <section>
+      <h2>ซอฟแวร์ใช้พัฒนา</h2>
+      <article>
+        <h3>KidBright IDE</h3>
+        <ul>
+          <li><a href="https://www.kid-bright.org/file/download/KidBrightIDE32bit.zip" target="_blank">ระบบปฎิบัติการ Windows 32-bit</a> และ <a href="http://quantum.engr.tu.ac.th/acad/kidbright-files/KidBrightIDE32bit.zip" target="_blank">TU Mirror</a></li>
+          <li><a href="https://www.kid-bright.org/file/download/KidBrightIDE64bit.zip" target="_blank">ระบบปฎิบัติการ Windows 64-bit</a> และ <a href="http://quantum.engr.tu.ac.th/acad/kidbright-files/KidBrightIDE64bit.zip" target="_blank">TU Mirror</a></li>
+          <li><a href="https://www.kid-bright.org/file/download/KidBrightIDE.zip" target="_blank">ระบบปฎิบัติการ macOS</a> และ <a href="http://quantum.engr.tu.ac.th/acad/kidbright-files/KidBrightIDE.zip" target="_blank">TU Mirror</a></li>
+          <li><a href="https://github.com/kidbright/kidbrightide" target="_blank">KidBright IDE บน GitHub</a></li>
+		      <li><a href="https://gitlab.com/kidbright/kbide" target="_blank">KidBright IDE Source code</a></li>
+          <li><a href="https://gitlab.com/kidbright/kidbright32" target="_blank">libkidbright32.a source code</a></li>
+          <li><a href="https://gitlab.com/kidbright/kbide-simulator" target="_blank">KidBright IDE Simulator Source code</a></li>
+          <li><a href="https://store.kidbright.info/" target="_blank">KidStore</a> - รวมปลั๊กอินสำหรับ KidBrightIDE</li>
+        </ul>
+        <h3>ไดร์เวอร์</h3>
+        <ul>
+          <li><a href="https://www.kid-bright.org/file/download/CDM21228_Setup.zip" target="_blank">FTDI</a> สำหรับ KidBright32 V1.3</li>
+          <li><a href="https://www.kid-bright.org/file/download/CypressDriverInstaller_1.zip" target="_blank">Cypress</a> สำหรับ KidBright32 V1.1 และ V1.2</li>
+        </ul>
+        <h3>Arduino IDE</h3>
+        <ul>
+          <li><a href="https://www.arduino.cc/en/Main/Software" target="_blank">ดาว์นโหลด Arduino IDE จากเว็บไซต์ผู้พัฒนา</a></li>
+          <li><a href="https://github.com/espressif/arduino-esp32" target="_blank">Arduino core for the ESP32</a></li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <h2>ความรู้จากกลุ่มผู้พัฒนา</h2>
+      <article>
+        <h3>เอกสารเผยแพร่</h3>
+        <ul>
+          <li><a href="https://www.kid-bright.org/files/Kb_Trainer%20Guide.pdf" target="_blank">คู่มือ Trainer (ฉบับเต็ม)</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_User%20Guide.pdf" target="_blank">คู่มือการใช้งาน (ฉบับเต็ม)</a></li>
+          <li><a href="https://www.kid-bright.org/file/download/[NECTEC]KidBright-Booklet-181022.pdf" target="_blank">คู่มือนักเรียน (ฉบับเต็ม)</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_1v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 1 คิดคำนวณชวนสนุก</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_2v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 2 ท่องไปในโลก KidBright</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_3v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 3 การสร้างภาพเคลื่อนไหวด้วย KidBright</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_4v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 4 สนุกคณิตกับ KidBright</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_5v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 5 คิดอย่างไรได้อย่างนั้น</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_6v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 6 ตะลุยโลกดนตรี</a></li>
+          <li><a href="https://www.kid-bright.org/files/KB_Student%20Handbook_7v2.pdf" target="_blank">คู่มือนักเรียน - บทที่ 7 เล่นกับเวลา</a></li>
+        </ul>
+        <h3>วิดีโอการใช้งาน</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=169SA4vodvk" target="_blank">KidBright: ตอนที่ 1 แนะนำ KidBright และ KidBright IDE</a></li>
+          <li><a href="https://www.youtube.com/watch?v=pKj3VDr6Cmk" target="_blank">KidBright: ตอนที่ 2 การเขียน code เบื้องต้น "โคมไฟและพัดลมอัตโนมัติ"</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ytQ7beMkmBA" target="_blank">KidBright: ตอนที่ 3 การเชื่อมต่อเซนเซอร์ภายนอก</a></li>
+          <li><a href="https://www.youtube.com/watch?v=GJQeAuG4GU4" target="_blank">KidBright: ตอนที่ 4 การเขียน Code ให้บอร์ดทำงานหลายหน้าที่</a></li>
+          <li><a href="https://www.youtube.com/watch?v=p07-u7rf0c8" target="_blank">KidBright: ตอนที่ 5 การใช้งานบอร์ดแบบ IoT</a></li>
+          <li><a href="https://www.youtube.com/watch?v=vOEJT93Ehfw" target="_blank">KidBright: ตอนที่ 6 การต่อยอดบอร์ด KidBright</a></li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <h2>ความรู้จากชุมชน</h2>
+      <article>
+        <h3>บทความเกี่ยวกับฮาร์ดแวร์</h3>
+        <ul>
+          <li><a href="https://kidbright.club/วงจร-kidbright/" target="_blank">เจาะลึก วงจร KidBright</a></li>
+          <!-- <li><a href="" target="_blank"></a></li> -->
+        </ul>
+        <h3>วิดีโอเกี่ยวกับฮาร์ดแวร์</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=KIOatjMtlcg" target="_blank">การบัดกรี Pin Header</a></li>
+          <!-- <li><a href="" target="_blank"></a></li> -->
+        </ul>
+        <h3>บทความสั้น</h3>
+        <ul>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=20.0" target="_blank">FAQ : ไม่สามารถอัพโหลด หรือใช้งานบอร์ด KidBright ได้ ทำอย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=37.0" target="_blank">FAQ : การใช้งาน OUTPUT (OUT1/OUT2) บน KidBright ทำอย่างไร ??</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=34.0" target="_blank">FAQ : Sensor แบบใดบ้าง ที่สามารถนำมาใช้กับบอร์ด KidBright ได้</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=23.0" target="_blank">FAQ : แบตเตอรี่ที่ใช้กับวงจรนาฬิกาบน KidBright ใช้แบบใหน</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=21.0" target="_blank">FAQ : KidBright กินไฟเท่าไหร่ ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=25.0" target="_blank">FAQ : จะต่อ Sensor ที่มี Output เป็นแบบ Analog ได้อย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=22.0" target="_blank">FAQ : เซนเซอร์แสง (LDR) บน บอร์ด KidBright ทำงานอย่างไร</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=67.0" target="_blank">FAQ : จะสามารถ หาซื้อ Sensor KidBright ได้ที่ใหน</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=40.0" target="_blank">FAQ : จะหาไฟล์ภาษาซี จากการ Build ของ KidBright IDE ได้อย่างไร</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=26.0" target="_blank">FAQ : บทเรียนออนไลน KidBright หาได้จากที่ใหน ??</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=24.0" target="_blank">FAQ : จะอัพเดทเวอร์ชั่น KidBright IDE ทำอย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=18.0" target="_blank">FAQ : หาไฟล์งานของ KidBright IDE ที่บันทึกไว้ได้อย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=13.0" target="_blank">FAQ : จะใช้งาน KidBright กับ Arduino IDE ได้อย่างไร ??</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=15.0" target="_blank">FAQ : การกำหนดขา (Pin Mapping) บนบอร์ด KidBright กับ Arduino IDE</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=62.0" target="_blank">FAQ : ไฟล์ Library (Arduino IDE) ของจอ Dot Matrix ของบอร์ด KidBright32</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=17.0" target="_blank">FAQ : ใช้งาน KidBright IoT : Internet of Things อย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=16.0" target="_blank">FAQ : ลงทะเบียนบอร์ด KidBright ให้สามารถใช้งาน Internet of Things : IoT อย่างไร?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=32.0" target="_blank">FAQ : ทำไมไม่สามารถใช้งาน KidBright IoT ได้ ??</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=31.0" target="_blank">FAQ : Feed และ Guage แตกต่างกันอย่างไรบน KidBright IDE ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=30.0" target="_blank">FAQ : เขียนโปรแกรมด้วย KidBright IDE แล้ว จะใช้งาน KidBright IoT ได้อย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=39.0" target="_blank">FAQ : จะออกแบบวงจรบน KidBright ด้วยโปรแกรม Fritzing ทำอย่างไร ?</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=66.0" target="_blank">KidBright Simulator || โปรแกรมจำลองการพัฒนาบอร์ดสมองกลฝังตัว KidBright</a></li>
+        </ul>
+        <h3>บทความการใช้งาน</h3>
+        <ul>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=48.0" target="_blank">KidBright + ArduinoIDE #1 ติดตั้ง ArduinoIDE และตัวอย่างโปรแกรม LED Blink</a></li>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php?topic=75.0" target="_blank">[คำถามจากทางบ้าน] คำถาม kitbright จากเด็กบ้านเรียน :: [โปรแกรมทำงานไม่ทันเวลา]</a></li>
+          <li><a href="https://kidbright.club/kb32_communication_protocol/" target="_blank">โปรโตคอลการสื่อสารในบอร์ด KidBright32</a></li>
+          <li><a href="https://kidbright.club/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a3%e0%b9%8c%e0%b8%94-kidbright-%e0%b9%81%e0%b8%9a%e0%b8%9a-iot/" target="_blank">การใช้งานบอร์ด KidBright แบบ Internet of Things</a></li>
+          <li><a href="https://kidbright.club/%e0%b8%a1%e0%b8%b2%e0%b8%97%e0%b8%b3%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%a3%e0%b8%b9%e0%b9%89%e0%b8%88%e0%b8%b1%e0%b8%81%e0%b8%81%e0%b8%b1%e0%b8%9a-kidbright-%e0%b9%81%e0%b8%a5%e0%b8%b0-kidbrigh/" target="_blank">มาทำความรู้จักกับ KidBright และ KidBright IDE</a></li>
+          <li><a href="https://kidbright.club/%e0%b8%a1%e0%b8%b2%e0%b8%97%e0%b8%b3%e0%b8%99%e0%b8%b2%e0%b8%ac%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%9b%e0%b8%a5%e0%b8%b8%e0%b8%81-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b1/" target="_blank">มาทำนาฬิกาปลุก สามารถตั้งเวลาได้กันเถอะ</a></li>
+          <li><a href="https://kidbright.club/kbchain_intro/" target="_blank">แนะนำชุดอุปกรณ์ KB Chain สำหรับบอร์ด Kid Bright</a></li>
+          <li><a href="https://kidbright.club/%e0%b9%81%e0%b8%88%e0%b8%81%e0%b9%84%e0%b8%9f%e0%b8%a5%e0%b9%8c%e0%b9%80%e0%b8%84%e0%b8%aa-kidbright-acrylic-%e0%b8%aa%e0%b8%b3%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%95%e0%b8%b1%e0%b8%94-laser/" target="_blank">แจกไฟล์เคส KidBright Acrylic สำหรับตัดเลเซอร์ ฟรี!</a></li>
+          <li><a href="https://kidbright.club/nodejs-for-kidbright-ide-development/" target="_blank">แนะนำการติดตั้ง NodeJS และ Git เครื่องมือสำหรับการพัฒนา KidBright IDE</a></li>
+          <li><a href="https://kidbright.club/fixed-kidbright32-upload/" target="_blank">แก้ไขปัญหา KidBright32 เกิด error เมื่อทำการแฟลชโปรแกรม</a></li>
+          <!-- <li><a href="" target="_blank"></a></li> -->
+        </ul>
+        <h3>ตัวอย่างโค้ดโปรแกรม</h3>
+        <ul>
+          <li><a href="https://github.com/ioxhop/KidBright32_Arduino" target="_blank">รวมตัวอย่างโค้ดโปรแกรมใช้งานอุปกรณ์ต่าง ๆ บน KidBright32 เมื่อใช้ Arduino IDE พัฒนา</a></li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <h2>ชุมชน</h2>
+      <article>
+        <h3>เว็บไซต์หลัก</h3>
+        <ul>
+          <li><a href="https://www.kid-bright.org/" target="_blank">kid-bright.org</a> เว็บไซต์กลุ่มนักพัฒนา</li>
+          <li><a href="https://www.kidbright.io/" target="_blank">KidBright.io</a> ซื้อขาย KidBright และอุปกร์เสริมจากผู้ผลิต</li>
+          <li><a href="https://github.com/kidbright" target="_blank">KidBright บน GitHub</a></li>
+          <li><a href="https://gitlab.com/kidbright" target="_blank">KidBright บน GitLab</a></li>
+        </ul>
+        <h3>ร้านค้าจำหน่ายอุปกรณ์เสริม</h3>
+        <ul>
+          <li><a href="https://www.ioxhop.com/category/116/%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%82%E0%B8%A1%E0%B8%94%E0%B8%B9%E0%B8%A5/kidbright32" target="_blank">ร้านไอโอเอ็กซ์ฮ๊อบ</a></li>
+          <li><a href="https://www.arduinothai.com/category/121/%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94-kidbright" target="_blank">ร้าน ArduinoThai</a></li>
+        </ul>
+        <h3>บล็อก</h3>
+        <ul>
+          <li><a href="https://kidbright.club/" target="_blank">KidBrightClub</a></li>
+        </ul>
+        <h3>โซเชียลเน็ตเวิร์ค</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/groups/377771226065228/" target="_blank">KidBright.Club (กลุ่มบน Facebook)</a></li>
+        </ul>
+        <h3>เว็บบอร์ด</h3>
+        <ul>
+          <li><a href="http://quantum.engr.tu.ac.th/smf/index.php" target="_blank">Quantum Technology and Electromagnetic Research Forum</a></li>
+        </ul>
+      </article>
+    </section>
+  </div>
+  <footer>
+    <p>ข้อมูลในไซต์นี้ สามารถ คัดลอก ทำซ้ำ ดัดแปลง ได้ทั้งหมด <strong>แต่ข้อมูลที่ไซต์นี้ลิ้งไป หรืออ้างอิงถึง ไม่สามารถคัดลอก ทำซ้ำ และดัดแปลงได้ หากไม่ได้รับอนุญาตจากเจ้าของเนื้อหานั้น ๆ</strong></p>
+    <p>เว็บไซต์ KidBright.info ไม่มีส่วนเกี่ยวข้องกับ NECTEC และกลุ่มผู้พัฒนา เพียงจัดทำดัชนีเพื่อให้ผู้ใช้งาน KidBright สามารถเข้าถึงข้อมูลได้รวดเร็วมากขึ้นเท่านั้น
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4189763,4,137,112,33,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4189763&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+    </p> 
+  </footer>
+</div></body>
+</html>
